@@ -32,3 +32,9 @@ static int xmp_getdir(const char *path, fuse_dirh_t h, fuse_dirfil_t filler)
     return res;
 }
 
+static struct fuse_operations xmp_oper = {
+
+    .getdir = xmp_getdir,
+
+}
+
